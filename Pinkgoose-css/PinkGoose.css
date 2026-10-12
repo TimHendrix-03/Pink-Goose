@@ -453,8 +453,11 @@ h3{
 }
 .idea-block-text{color: black;}
 
-.our-heroes{margin-bottom: 150px;}
-.our-heroes{margin-top: 50px;}
+.our-heroes{
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
 .our-heroes h2{margin-bottom: 50px;}
 
 .heroes-boxes{
