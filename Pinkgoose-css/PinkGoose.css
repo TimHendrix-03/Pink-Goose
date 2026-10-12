@@ -236,7 +236,7 @@ h3{
 .block .sizing {height: 80px; width: auto;} 
 .block .sizing-2 {height:100px; width: auto;}
 
-.wwblockcolumn {
+.block-column {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
@@ -272,7 +272,10 @@ h3{
     background-color: #121E28;
 }
 .weekly-digest>h2{margin-top: 20px; margin-bottom: 25px;}
-.weekly-digest>h3{color: #9AAFC3;}
+
+.info-text{
+    color: #9AAFC3;
+}
 
 #input-text{
     background-color: #121E28;
@@ -362,8 +365,6 @@ h3{
     color: black;
 }
 
-
-
 .podcasts{
     display: flex;
     align-self: center;
@@ -392,7 +393,6 @@ h3{
 }
 .podcasts-block a{color: white;}
 
-
 .podcasts-img-move{
     display: flex;
     align-self: flex-start;
@@ -416,7 +416,6 @@ h3{
     gap: 20px;
     margin-top: 100px;
 }
-#your-idea h3{color: #5A6C7E;}
 
 .idea-blocks{
     display: flex;
@@ -452,6 +451,7 @@ h3{
     margin-left: 3px;
     font-size: 12px;
 }
+.idea-block-text{color: black;}
 
 .our-heroes{margin-bottom: 150px;}
 .our-heroes{margin-top: 50px;}
