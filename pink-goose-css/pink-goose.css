@@ -9,33 +9,29 @@ body {
     background-color: #0A1117;
     font-family: sans-serif;
     color: white;
-}
-
-.container{
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
-    height: 104px;
 }
 
 .header {
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    height: 104px;
+    height: 50px;
     width: 80%;
     padding: 10px;
 }
 
-.navbar{
+nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
 }
-.navbar a{color: white;}
-.navbar a:hover{
+nav a{color: white;}
+nav a:hover{
     cursor: pointer;
     background-color: #FFB4D3;
     border-radius: 8px;
@@ -57,11 +53,11 @@ body {
     background-color: lightblue;
 }
 
-.goosepink {
+.goose-pink {
     color: #FFB4D3;
 }
 
-.navtext {
+.nav-text {
     display: flex;
     align-items: center;
     align-self: center;
@@ -74,16 +70,31 @@ h2{
     font-size: 32px;
     font-weight: bold;
 }
+
 h3{
-    font-size: 19;
+    font-size: 19px;
     font-weight: bold;
 }
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+li{font-size: 20px; font-weight: bold;}
+
 .intro {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
     flex-direction: column;
+    margin: 0 auto;
     margin-top: 200px;
     max-width: 300px;
 }
@@ -136,23 +147,19 @@ h3{
 .text-block {
     padding: 10px;
     border-radius: 25px;
+    font-weight: normal;
+    font-size: 16px;
     background-color: #182632;
 }
+.text-blocks li:hover{cursor: pointer; background-color: rgb(45, 173, 216);}
 
-.text-block1 {color: #FFB4D3;}
-.text-block1:hover{cursor: pointer; background-color: rgb(45, 173, 216);}
-.text-block2 {color: #FFC24C;}
-.text-block2:hover{ cursor: pointer; background-color: rgb(45, 173, 216)}
-.text-block3 {color: #D387F7;}
-.text-block3:hover{ cursor: pointer; background-color: rgb(45, 173, 216)}
-.text-block4 {color: #77E6FF;}
-.text-block4:hover{ cursor: pointer; background-color: rgb(45, 173, 216)}
-.text-block5 {color: #23C9DE;}
-.text-block5:hover{ cursor: pointer; background-color: rgb(45, 173, 216)}
-.text-block6 {color: #FF9E9E;}
-.text-block6:hover{ cursor: pointer; background-color: rgb(45, 173, 216)}
-.text-block7 {color: #707F8D;}
-.text-block7:hover{ cursor: pointer; background-color: rgb(45, 173, 216)}
+.text-block-1 {color: #FFB4D3;}
+.text-block-2 {color: #FFC24C;}
+.text-block-3 {color: #D387F7;}
+.text-block-4 {color: #77E6FF;}
+.text-block-5 {color: #23C9DE;}
+.text-block-6 {color: #FF9E9E;}
+.text-block-7 {color: #707F8D;}
 
 .img-overflow {
     display: flex;
@@ -188,17 +195,18 @@ h3{
     flex-direction: column;
     font-weight: bold;
     align-self: center;
-    font-size: 30px;
     gap: 20px;
-    color: #37424D;
-    transition: 2s ease;
+
 }
-.reference-text-header{color: white; font-size: 35px;}
+.reference-block h3{color: white; font-size: 35px;}
+.reference-list{flex-direction: column;}
 
 .reference-text{
     color: #37424D;
+    font-size: 30px;
 }
 .reference-text:hover {
+    transition: 0.3s;    
     color: white;
     font-size: 32px;
     text-shadow: 0 10px 10px #FFB4D3;
@@ -233,8 +241,8 @@ h3{
     width: 100px;
     border-radius: 25px;
 }
-.block .sizing {height: 80px; width: auto;} 
-.block .sizing-2 {height:100px; width: auto;}
+.block .image-sizing {height: 80px; width: auto;} 
+.block .image-sizing-2 {height:100px; width: auto;}
 
 .block-column {
     display: flex;
@@ -242,21 +250,7 @@ h3{
     margin-bottom: 50px;
 }
 
-.help-text-blocks {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-self: center;
-    margin: 0 auto  ;
-    gap: 35px;
-    max-width: 600px;
-    margin-bottom: 100px;
-}
-
-.help-text{
-    font-size: 20px;
-}
+.help-text-blocks {margin-bottom: 100px;}
 
 .weekly-digest {
     display: flex;
@@ -273,19 +267,12 @@ h3{
 }
 .weekly-digest>h2{margin-top: 20px; margin-bottom: 25px;}
 
-.info-text{
+.weekly-digest p{
     color: #9AAFC3;
+    font-size: 19px;
+    font-weight: bold;
 }
 
-#input-text{
-    background-color: #121E28;
-    border-color: #2A3744;
-    border-radius: 8px;
-    color: white;
-    padding: 5px;
-    width: 250px;
-    margin-top: 30px;
-}
 
 .input-text{
     background-color: #121E28;
@@ -321,12 +308,12 @@ h3{
 }
 .press h2{text-align: start;}
 
-.press-header{
+.blocks-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.press-header a{color: #8395A7;}
+.blocks-header a{color: #8395A7;}
 
 .press-blocks{
     display: flex;
@@ -346,9 +333,9 @@ h3{
     text-align: start;
 }
 
-.press1{background-color: #77E6FF;}
-.press2{background-color: #E2C1F9;}
-.press3{background-color: #DBE268;}
+.press-1{background-color: #77E6FF;}
+.press-2{background-color: #E2C1F9;}
+.press-3{background-color: #DBE268;}
 
 .block-text{height: 250px;}
 
@@ -358,26 +345,12 @@ h3{
 }
 .arrow a{color: black;}
 
-.read-2 {
-    display: flex;
-    margin-left: 3px;
-    margin-top: 82px;
-    color: black;
-}
-
 .podcasts{
     display: flex;
     align-self: center;
     flex-direction: column;
     margin-bottom: 250px;
 }
-
-.podcasts-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.podcasts-header a{color: #8395A7;}
 
 .podcasts-block{
     display: flex;
@@ -396,18 +369,6 @@ h3{
 .podcasts-img-move{
     display: flex;
     align-self: flex-start;
-}
-
-.listen-2{
-    text-align: start;
-    margin-left: 15px;
-    margin-top: 8px;
-}
-
-.listen-3{
-    text-align: start;
-    margin-left: 15px;
-    margin-top: 52px;
 }
 
 #your-idea{
@@ -429,27 +390,26 @@ h3{
     flex-direction: row;
     height: 60px;
     width: 200px;
+    padding: 5px;
     border-radius: 8px;
     color: black;
 }
-.idea-block h4{font-size: 12px; font-weight:bold;}
+.idea-block p{font-size: 14px;}
 .idea-block-1{background-color: #FFC803;}
 .idea-block-2{background-color: #E2C1F9;}
 
 .idea-block img{
+    display: flex;
     height: 40px;
     width: auto;
-    margin-top: 12px;
-    margin-left: 5px;
+    margin-top: 5px;
 }
 
 .idea-block-text{
     display: flex;
     flex-direction: column;
     text-align: start;
-    margin-top: 18px;
-    margin-left: 3px;
-    font-size: 12px;
+    padding: 7px;
 }
 .idea-block-text{color: black;}
 
